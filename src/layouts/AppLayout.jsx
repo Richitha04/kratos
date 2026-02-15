@@ -7,7 +7,7 @@ export default function AppLayout() {
   const [collapsed, setCollapsed] = useState(false);
 
   return (
-    <div className="flex min-h-screen bg-app-bg">
+    <div className="flex min-h-screen bg-slate-100">
       <Sidebar collapsed={collapsed} />
       <div className="flex-1">
         <Navbar onToggleSidebar={() => setCollapsed((prev) => !prev)} />
